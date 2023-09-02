@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+.header
+{
+border: 2px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+}
+        h2 {
+            text-align: center;
+        }
+
+        .form-container {
+        margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .form-column {
+            flex-basis: 50%;
+            padding-right: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type="number"],
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 40%;
+        }
+
+        .submit-button {
+            text-align: center;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h2>House Details Form</h2></div>
+    <div class="form-container">
+        <div class="form-column">
+            <form action="/" method="post">
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" required>
+
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" required>
+
+                <label for="living_area">Living Area (in sqft):</label>
+                <input type="number" id="living_area" name="living_area" required>
+
+                <label for="lot_area">Lot Area (in sqft):</label>
+                <input type="number" id="lot_area" name="lot_area" required>
+
+                <label for="floors">Number of Floors:</label>
+                <input type="number" id="floors" name="floors" required>
+
+                <label for="condition">Condition of the House:</label>
+                <select id="condition" name="condition" required>
+                    <option value="">--Select Condition--</option>
+                    <option value="1">Poor</option>
+                    <option value="2">Fair</option>
+                    <option value="3">Average</option>
+                    <option value="4">Good</option>
+                    <option value="5">Excellent</option>
+                </select>
+            </div>
+
+            <div class="form-column">
+                <label for="grade">Grade of the House:</label>
+                <select id="grade" name="grade" required>
+                    <option value="">--Select Grade--</option>
+                    <option value="1">Low</option>
+                    <option value="2">Average</option>
+                    <option value="3">Above Average</option>
+                    <option value="4">Good</option>
+                    <option value="5">Excellent</option>
+                </select>
+
+                <label for="area_excluding_basement">Area of the House (excluding basement) (in sqft):</label>
+                <input type="number" id="area_excluding_basement" name="area_excluding_basement" required>
+
+                <label for="area_basement">Area of the Basement (in sqft):</label>
+                <input type="number" id="area_basement" name="area_basement" required>
+
+                <label for="built_year">Built Year:</label>
+                <input type="number" id="built_year" name="built_year" required>
+
+                <label for="postal_code">Postal Code:</label>
+                <input type="text" id="postal_code" name="postal_code" required>
+
+                <label for="distance_airport">Distance from the Airport (in miles):</label>
+                <input type="number" id="distance_airport" name="distance_airport" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="submit-button">
+        <input type="submit" value="Submit">
+    </div>
+</body>
+</html>

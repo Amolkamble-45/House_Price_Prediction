@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicted House Price</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .result-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .result-value {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .house-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Predicted House Price</h2>
+        <div class="result-container">
+            <p class="result-value">{{ predicted_price }}</p>
+            <img class="house-image" src="https://example.com/path/to/beautiful-house.jpg" alt="Beautiful House">
+        </div>
+    </div>
+</body>
+</html>
